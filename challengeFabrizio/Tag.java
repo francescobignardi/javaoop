@@ -31,10 +31,11 @@ public class Tag {
 
 
     public void print(){
-        System.out.print("<" + tag + ">");
+        System.out.print("<" + tag);
         for(Map.Entry<String, String> entry : attributes.entrySet()){
             System.out.print(" " + entry.getKey() + "=\"" + entry.getValue() + "\"");
         }
+        System.out.print(">");
         System.out.print("</" + tag + ">");
     }
 }
