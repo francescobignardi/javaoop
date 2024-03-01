@@ -1,5 +1,7 @@
 package javaoop.challengeFabrizio;
 
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,10 +15,13 @@ public class Main {
          * alberate.
          */
 
-        Link link = new Link();
-        Immagine immagine = new Immagine();
         Paragrafo paragrafo = new Paragrafo();
 
         System.out.println(paragrafo.toString());
+
+        Tag tag = new Tag("link");
+        tag.setAttribute("rel", "stylesheet");
+        tag.setAttribute("pippo", "pollo");
+        tag.print();
     }
 }
