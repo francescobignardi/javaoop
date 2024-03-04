@@ -15,5 +15,4 @@ public class EmptyTag extends Tag{
         }
         System.out.print(">");
     }
-    // commento
 }
