@@ -15,13 +15,17 @@ public class Main {
          * alberate.
          */
 
-        Paragrafo paragrafo = new Paragrafo();
-
-        System.out.println(paragrafo.toString());
-
-        Tag tag = new Tag("link");
+        Tag tag = new EmptyTag("link");
         tag.setAttribute("rel", "stylesheet");
         tag.setAttribute("pippo", "pollo");
         tag.print();
+
+        System.out.println("\n");
+
+        Tag tag1 = new ContainerTag("div");
+        tag1.setAttribute("prova", "prova");
+        tag1.setAttribute("prova1", "prova1");
+        tag1.setAttribute("prova3", "prova3");
+        tag1.print();
     }
 }

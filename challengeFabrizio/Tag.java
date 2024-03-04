@@ -3,10 +3,10 @@ package javaoop.challengeFabrizio;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Tag {
+public abstract class Tag {
 
-    private String tag;
-    private Map<String, String> attributes;
+    protected String tag;
+    protected Map<String, String> attributes;
 
     public Tag(String tag) {
         this.tag = tag;
@@ -38,6 +38,5 @@ public class Tag {
         System.out.print(">");
         System.out.print("</" + tag + ">");
     }
-    //prova di gitflow
-    //prova pullRequest
+
 }
