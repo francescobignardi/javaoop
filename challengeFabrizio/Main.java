@@ -15,15 +15,17 @@ public class Main {
          * alberate.
          */
 
-        Tag tag = new EmptyTag("link");
+        EmptyTag tag = new EmptyTag("link");
         tag.setAttribute("rel", "stylesheet");
         tag.setAttribute("pippo", "pollo");
         tag.print();
 
         System.out.println("\n");
 
-        Tag tag1 = new ContainerTag("div");
+        ContainerTag tag1 = new ContainerTag("div");
         tag1.setAttribute("prova", "prova");
+        tag1.addTag(new ContainerTag("Fabrizio"));
+        tag1.addTag(new ContainerTag("Francesco"));
         tag1.setAttribute("prova1", "prova1");
         tag1.setAttribute("prova3", "prova3");
         tag1.print();
