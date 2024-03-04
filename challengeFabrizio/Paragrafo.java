@@ -2,7 +2,7 @@ package javaoop.challengeFabrizio;
 
 public class Paragrafo {
 
-    private String paragrafo = "Challenge Fabrizio ";
+    private String paragrafo;
 
     public Paragrafo(String paragrafo) {
         this.paragrafo = paragrafo;
