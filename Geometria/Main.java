@@ -17,11 +17,11 @@ public class Main {
     public static void print(List<Figura> lista){
         for(Figura i : lista){
             System.out.println("Nome: " + i.getNome() + ", perimetro: ");
-            i.Perimetro();
+            System.out.println(i.getPerimetro());
         }
         for(Figura i : lista){
             System.out.println("Nome: " + i.getNome() + ", area: ");
-            i.Area();
+            System.out.println(i.getArea());
         }
     }
 }

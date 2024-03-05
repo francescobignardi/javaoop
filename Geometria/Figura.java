@@ -29,54 +29,7 @@ public abstract class Figura {
         this.nome = nome;
     }
 
-    public Double getCateto1() {
-        return cateto1;
-    }
-
-    public void setCateto1(Double cateto1) {
-        this.cateto1 = cateto1;
-    }
-
-    public Double getCateto2() {
-        return cateto2;
-    }
-
-    public void setCateto2(Double cateto2) {
-        this.cateto2 = cateto2;
-    }
-
-    public Double getCateto3() {
-        return cateto3;
-    }
-
-    public void setCateto3(Double cateto3) {
-        this.cateto3 = cateto3;
-    }
-
-    public Double getBase() {
-        return base;
-    }
-
-    public void setBase(Double base) {
-        this.base = base;
-    }
-
-    public Double getAltezza() {
-        return altezza;
-    }
-
-    public void setAltezza(Double altezza) {
-        this.altezza = altezza;
-    }
-
-    public Double getRaggio() {
-        return raggio;
-    }
-
-    public void setRaggio(Double raggio) {
-        this.raggio = raggio;
-    }
-    public void Perimetro(){}
-    public void Area(){}
+    public abstract Double getPerimetro();
+    public abstract Double getArea();
 
 }

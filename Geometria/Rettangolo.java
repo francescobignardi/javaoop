@@ -5,12 +5,10 @@ public class Rettangolo extends Figura {
         super(base, altezza);
         nome = "Rettangolo";
     }
-    @Override
-    public void Perimetro(){
-        System.out.println(base+base+altezza+altezza);
+    public Double getPerimetro(){
+        return(base+base+altezza+altezza);
     }
-    @Override
-    public void Area(){
-        System.out.println(base*altezza);
+    public Double getArea(){
+        return(base*altezza);
     }
 }

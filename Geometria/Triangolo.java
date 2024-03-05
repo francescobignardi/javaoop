@@ -6,15 +6,13 @@ public class Triangolo extends Figura {
         super(cateto1, cateto2, cateto3);
         nome = "Triangolo";
     }
-    @Override
-    public void Perimetro(){
-        System.out.println(cateto1+cateto2+cateto3);
+    public Double getPerimetro(){
+        return(cateto1+cateto2+cateto3);
     }
-    @Override
-    public void Area(){
+    public Double getArea(){
         Double perimetroFrattoDue = (cateto1+cateto2+cateto3)/2;
         Double area = Math.sqrt(perimetroFrattoDue * (perimetroFrattoDue - cateto1)
         * (perimetroFrattoDue - cateto2) * (perimetroFrattoDue - cateto3));
-        System.out.println(area);
+        return area;
     }
 }
