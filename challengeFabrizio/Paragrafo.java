@@ -5,7 +5,7 @@ public class Paragrafo extends ContainerTag {
     private String paragrafo;
 
 
-    public Paragrafo(String tag) {
-        super(tag);
+    public Paragrafo() {
+        super("paragrafo");
     }
 }
