@@ -5,18 +5,12 @@ public class Node {
     protected Node left;
     protected Node right;
 
-    public Node(Integer value, Node left, Node right) {
+    public Node(Integer value) {
         this.value = value;
-        this.left = left;
-        this.right = right;
     }
 
     public Integer getValue() {
         return value;
-    }
-
-    public void setValue(Integer value) {
-        this.value = value;
     }
 
     public Node getLeft() {
