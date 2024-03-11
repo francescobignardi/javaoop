@@ -9,6 +9,22 @@ public class Node {
         this.value = value;
     }
 
+    public void addValue(Integer intero){
+        if(intero < value){
+            if(left == null){
+                left = new Node(intero);
+            } else {
+                left.addValue(intero);
+            }
+        } else if (intero > value){
+            if(right == null){
+                right = new Node(intero);
+            } else {
+                right.addValue(intero);
+            }
+        }
+    }
+
     public Integer getValue() {
         return value;
     }
